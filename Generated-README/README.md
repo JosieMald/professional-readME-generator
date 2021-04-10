@@ -1,14 +1,8 @@
-
-# fgsdfgsdfg ![license](https://img.shields.io/badge/license-IBM-green)
+# Professional README Generator 
 
 ## Description
 
-
-dfgsdfgsdfg
-sdfgsdfgsdfg
-sdfgdsfgsdfg
-sdfgsdfgdsfgsd
-
+I wanted to create a Professional README generator so I and other users could save time by answering a few simple questions about there project in just minutes.
 
 ## Table of Contents
 
@@ -19,21 +13,31 @@ sdfgsdfgdsfgsd
 
 ## Installation
 
-fgsdfgsdfgs
+Must have node.js installed on your computer. You can install this in your terminal by running npm i to install. Once installed you should now see a package.json file in your folder.
 
 ## Usage
 
-dfgsdfgsdfgsd
+Create a professional read me as shown below:
 
+![alt text](url)
 
-![alt text](dfgsdfgsdfgsd)
-
-
-## Credits
-
-fgsdfgsdfgdsf
 
 ## License
 
-https://opensource.org/licenses/IPL-1.0
+ 
 
+## Credits
+
+ 
+
+## Tests
+
+undefined
+
+## Questions
+
+![gitHub](www.github.com/undefined)
+
+For more information regarding this generator you can contact me at:
+
+josielindamaldonado@gmail.com

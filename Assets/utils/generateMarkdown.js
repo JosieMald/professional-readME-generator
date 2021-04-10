@@ -1,7 +1,11 @@
 
 
  renderLicenseBadge = (response) => {
-  return `![license](https://img.shields.io/badge/license-${response.license}-green)`
+   if ( response.license == 'None' ) {
+     return ` `;
+   } else {
+     return `![license](https://img.shields.io/badge/license-${response.license}-green)`
+   }
 }
 
 // License links
@@ -29,12 +33,7 @@ ${renderLicenseBadge(response)}
 
 ## Description
 
-
-${response.motivation}
-${response.projectBuild}
-${response.problemSolve}
-${response.learned}
-
+${response.description}
 
 ## Table of Contents
 
@@ -49,20 +48,31 @@ ${response.installation}
 
 ## Usage
 
-${response.usage}
+Create a professional read me as shown below:
 
 
-![alt text](${response.usage})
+![usage](${response.usage})
 
-
-## Credits
-
-${response.credits}
 
 ## License
 
 ${renderLicenseLink(response)}
 
+## Credits
+
+${response.credits}
+
+## Tests
+
+${response.test}
+
+## Questions
+
+![gitHub](www.github.com/${response.Github})
+
+For more information regarding this generator you can contact me at:
+
+${response.email}
 `
 
 module.exports = generateMarkdown;

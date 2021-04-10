@@ -12,23 +12,8 @@ inquirer
     },
     {
         type: "input",
-        name: "motivation",
-        message: "What was your motivation for this project?",
-    },
-    {
-        type: "input",
-        name: "projectBuild",
-        message: "Why did you build this project?",
-    },
-    {
-        type: "input",
-        name: "problemSolve",
-        message: "What problem does it solve?",
-    },
-    {
-        type: "input",
-        name: "learned",
-        message: "What did you learn?",
+        name: "description",
+        message: "What is the description of your project?",
     },
     {
         type: "input",
@@ -38,7 +23,7 @@ inquirer
     {
         type: "input",
         name: "usage",
-        message: "What is the path or url to your img?",
+        message: "What is the link or relative path to your img?",
     },
     {
         type: "input",
@@ -50,6 +35,16 @@ inquirer
         name: "license",
         message: "Please choose a License?",
         choices: ['Apache', 'Boost','IBM', 'MIT', 'Mozilla', 'None'],
+    },
+    {
+        type: "input",
+        name: "gitHub",
+        message: "What is your gitHub username?",
+    },
+    {
+        type: "input",
+        name: "email",
+        message: "What is your email address?",
     },
 
 ]) 
