@@ -1,5 +1,9 @@
 # Professional README Generator 
 
+## Video
+
+![Video](Assets/img/README-Generator.gif)
+
 ## Description
 
 I wanted to create a Professional README generator so I and other users could save time by answering a few simple questions about there project in just minutes.
@@ -19,25 +23,12 @@ Must have node.js installed on your computer. You can install this in your termi
 
 Create a professional read me as shown below:
 
-![alt text](url)
-
-
-## License
-
- 
-
-## Credits
-
- 
-
-## Tests
-
-undefined
+![alt text](Assets/img/test.png)
 
 ## Questions
 
-![gitHub](www.github.com/undefined)
+![gitHub](https://github.com/JosieMald)
 
 For more information regarding this generator you can contact me at:
 
-josielindamaldonado@gmail.com
+JosieLindaMaldonado@gmail.com

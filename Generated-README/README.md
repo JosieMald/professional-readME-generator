@@ -1,8 +1,11 @@
-# Professional README Generator 
+
+# example 
+
+![license](https://img.shields.io/badge/license-MIT-green)
 
 ## Description
 
-I wanted to create a Professional README generator so I and other users could save time by answering a few simple questions about there project in just minutes.
+example
 
 ## Table of Contents
 
@@ -13,22 +16,23 @@ I wanted to create a Professional README generator so I and other users could sa
 
 ## Installation
 
-Must have node.js installed on your computer. You can install this in your terminal by running npm i to install. Once installed you should now see a package.json file in your folder.
+example
 
 ## Usage
 
 Create a professional read me as shown below:
 
-![alt text](url)
+
+![usage](https://www.screencastify.com)
 
 
 ## License
 
- 
+https://opensource.org/licenses/MIT
 
 ## Credits
 
- 
+example
 
 ## Tests
 
@@ -40,4 +44,4 @@ undefined
 
 For more information regarding this generator you can contact me at:
 
-josielindamaldonado@gmail.com
+kermit@gmail.com

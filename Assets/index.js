@@ -31,6 +31,11 @@ inquirer
         message: "Who or what would you like to credit?",
     },
     {
+        type: "input",
+        name: "test",
+        message: "What is the link or relative path to your test img?",
+    },
+    {
         type: "list",
         name: "license",
         message: "Please choose a License?",

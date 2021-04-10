@@ -68,7 +68,7 @@ ${response.test}
 
 ## Questions
 
-![gitHub](www.github.com/${response.Github})
+![gitHub](https://github.com/${response.Github})
 
 For more information regarding this generator you can contact me at:
 
