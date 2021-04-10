@@ -1,13 +1,13 @@
 
-# Snoopie undefined
+# snoopie undefined
 
 ## Description
 
 
-i like dogs
-so dogs can find a hope from adoption center
-so we can stop killing dogs that need a loving home
-how to code stuff on the computer
+dfsdf
+sdfsdf
+sdfsdf
+sdfsdf
 
 
 ## Table of Contents
@@ -19,21 +19,21 @@ how to code stuff on the computer
 
 ## Installation
 
-node index.js
+sdfsdf
 
 ## Usage
 
-www.ilikeeggs.com
+dfsdf
 
 
-![alt text](www.ilikeeggs.com)
+![alt text](dfsdf)
 
 
 ## Credits
 
-me, myself, and i
+sdfsdf
 
 ## License
 
-Apache
+Boost
 

@@ -1,9 +1,10 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
+const generateMarkdown = require("../Assets/utils/generateMarkdown.js")
 
 const generateReadMe = (response) =>
 `
-# ${response.projectTitle} ${response.choices}
+# ${response.projectTitle} ${generateMarkdown.renderLicenseBadge}
 
 ## Description
 
@@ -39,7 +40,7 @@ ${response.credits}
 
 ## License
 
-${response.license}
+${generateMarkdown.renderLicenseLink}
 
 `
 inquirer
@@ -88,34 +89,15 @@ inquirer
         type: "list",
         name: "license",
         message: "Please choose a License?",
-        choices: ['Apache', 'Boost','Eclipse','IBM', 'ISC', 'MIT', 'Mozilla'],
+        choices: ['Apache', 'Boost','IBM', 'MIT', 'Mozilla', 'None'],
     },
 
 ]) 
 
 .then((response) => {
-    if ( response.choices == 'Apache') {
-        response.choices = "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)]";
-        response.license = "https://opensource.org/licenses/Apache-2.0";
-    };
-    if ( response.choices == 'Boost') {
-        response.choices = "[![License](https://img.shields.io/badge/License-Boost%201.0-lightblue.svg)]";
-        response.license = "https://www.boost.org/LICENSE_1_0.txt";
-    };
-    if ( response.choices == 'IBM') {
-        response.choices = "[![License: IPL 1.0](https://img.shields.io/badge/License-IPL%201.0-blue.svg)]";
-        response.license = "https://opensource.org/licenses/IPL-1.0";
-    };
-    if ( response.choices == 'MIT') {
-        response.choices = "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]";
-        response.license = "https://opensource.org/licenses/MIT";
-    };
-    if ( response.choices == 'Mozilla') {
-        response.choices = "[![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)]";
-        response.license = "https://opensource.org/licenses/MPL-2.0";
-    };
+    
     const readMePageContent = generateReadMe(response);
 
-    fs.writeFile('README.md', readMePageContent, (err) =>
+    fs.writeFile('../Generated-README/README.md', readMePageContent, (err) =>
     err ? console.log(err) : console.log('Successfully created README.md'));
 });
