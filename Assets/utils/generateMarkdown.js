@@ -1,35 +1,31 @@
 
 
- const renderLicenseBadge = (license) => {
-  return `![license](https://img.shields.io/badge/license-${license}-green)`
+ renderLicenseBadge = (response) => {
+  return `![license](https://img.shields.io/badge/license-${response.license}-green)`
 }
 
 // License links
-const  renderLicenseLink = (license) => {
-  if ( license == 'Apache') {
-     let link = `https://opensource.org/licenses/Apache-2.0`;
-     console.log(link);
- } else if ( license == 'Boost' ) {
-     let link = `https://www.boost.org/LICENSE_1_0.txt`;
-     console.log(link);
- } else if ( license == 'IBM' ) {
-     let link = `https://opensource.org/licenses/IPL-1.0`;
-     console.log(link);
- } else if ( license == 'MIT' ) {
-     let link = `https://opensource.org/licenses/MIT`;
-     console.log(link);
- } else if ( license == 'Mozilla' ) {
-     let link = `https://opensource.org/licenses/MPL-2.0`;
-     console.log(link);
- } else ( license == 'None' ); {
+const  renderLicenseLink = (response) => {
+  if ( response.license == 'Apache') {
+     return `https://opensource.org/licenses/Apache-2.0`;
+ } else if ( response.license == 'Boost' ) {
+     return `https://www.boost.org/LICENSE_1_0.txt`;
+ } else if ( response.license == 'IBM' ) {
+     return `https://opensource.org/licenses/IPL-1.0`;
+ } else if ( response.license == 'MIT' ) {
+     return `https://opensource.org/licenses/MIT`;
+ } else if ( response.license == 'Mozilla' ) {
+     return `https://opensource.org/licenses/MPL-2.0`;
+ } else  if ( response.license == 'None' ) {
       return ` `;
-    // console.log(link);
  }
 };
 
-const generateReadMe = (response) =>
+const generateMarkdown = (response) =>
 `
-# ${response.projectTitle} ${generateMarkdown.renderLicenseBadge}
+# ${response.projectTitle} 
+
+${renderLicenseBadge(response)}
 
 ## Description
 
@@ -65,11 +61,8 @@ ${response.credits}
 
 ## License
 
-${generateMarkdown.renderLicenseLink}
+${renderLicenseLink(response)}
 
 `
 
-module.exports = {
-  renderLicenseBadge,
-  renderLicenseLink.license,
-};
+module.exports = generateMarkdown;

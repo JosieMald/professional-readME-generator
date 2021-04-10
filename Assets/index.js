@@ -2,47 +2,7 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 const generateMarkdown = require("../Assets/utils/generateMarkdown.js")
 
-const generateReadMe = (response) =>
-`
-# ${response.projectTitle} ${generateMarkdown.renderLicenseBadge}
 
-## Description
-
-
-${response.motivation}
-${response.projectBuild}
-${response.problemSolve}
-${response.learned}
-
-
-## Table of Contents
-
--[Installation](#installation)
--[Usage](#usage)
--[Credits](#credits)
--[License](#license)
-
-## Installation
-
-${response.installation}
-
-## Usage
-
-${response.usage}
-
-
-![alt text](${response.usage})
-
-
-## Credits
-
-${response.credits}
-
-## License
-
-${generateMarkdown.renderLicenseLink}
-
-`
 inquirer
 .prompt([
     {
@@ -96,7 +56,7 @@ inquirer
 
 .then((response) => {
     
-    const readMePageContent = generateReadMe(response);
+    const readMePageContent = generateMarkdown(response);
 
     fs.writeFile('../Generated-README/README.md', readMePageContent, (err) =>
     err ? console.log(err) : console.log('Successfully created README.md'));
