@@ -27,7 +27,7 @@ Create a professional read me as shown below:
 
 ## Questions
 
-![gitHub](https://github.com/JosieMald)
+[gitHub](https://github.com/JosieMald)
 
 For more information regarding this generator you can contact me at:
 
